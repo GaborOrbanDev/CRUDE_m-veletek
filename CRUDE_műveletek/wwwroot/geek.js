@@ -16,4 +16,4 @@ const letöltés = () => {
     fetch('/jokes.json').then(response => response.json()).then(data => letöltésBefejeződött(data))
 }
 
-letöltés()
+window.onload = letöltés()
