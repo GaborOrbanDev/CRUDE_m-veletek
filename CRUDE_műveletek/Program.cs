@@ -7,7 +7,8 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 app.UseDefaultFiles();
-app.MapControllers();
 app.UseStaticFiles();
+app.MapControllers();
+
 
 app.Run();
