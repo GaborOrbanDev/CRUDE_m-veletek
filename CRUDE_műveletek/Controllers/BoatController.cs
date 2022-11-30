@@ -14,8 +14,8 @@ namespace CRUDE_műveletek.Controllers
         {
             HajosContext contecxt = new();
             var kérdések = contecxt.Questions.Select(x => x.Question1);
-            //return Ok(kérdések);
-            return new JsonResult(kérdések);
+            return Ok(kérdések);
+            //return new JsonResult(kérdések);
         }
     }
 }
