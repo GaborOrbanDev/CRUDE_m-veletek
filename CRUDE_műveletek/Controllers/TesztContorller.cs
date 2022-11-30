@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 
 namespace CRUDE_műveletek.Controllers
 {
@@ -15,6 +16,20 @@ namespace CRUDE_műveletek.Controllers
                 Content = pontosIdő
             };
             //ezt lehet egyszerűbben return Ok(pontosIdő);
+        }
+
+        [HttpGet]
+        [Route("/api/nagybetus/{szoveg}")]
+        public IActionResult Nagybetus(string szoveg)
+        {
+            try
+            {
+                return Ok(szoveg.ToUpper());
+            }
+            catch
+            {
+                return BadRequest("Nem szöveg");
+            }
         }
     }
 }
