@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32802.462
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDE_műveletek", "CRUDE_műveletek\CRUDE_műveletek.csproj", "{BD7C0522-41C4-4D89-9006-FCE03B041959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDE_műveletek", "CRUDE_műveletek\CRUDE_műveletek.csproj", "{BD7C0522-41C4-4D89-9006-FCE03B041959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelIras", "ExcelIras\ExcelIras.csproj", "{D9F2A3CA-81FB-4265-B32B-84AC67CEB532}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BD7C0522-41C4-4D89-9006-FCE03B041959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD7C0522-41C4-4D89-9006-FCE03B041959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD7C0522-41C4-4D89-9006-FCE03B041959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F2A3CA-81FB-4265-B32B-84AC67CEB532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F2A3CA-81FB-4265-B32B-84AC67CEB532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F2A3CA-81FB-4265-B32B-84AC67CEB532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F2A3CA-81FB-4265-B32B-84AC67CEB532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
