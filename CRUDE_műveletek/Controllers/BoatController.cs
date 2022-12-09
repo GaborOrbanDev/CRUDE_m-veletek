@@ -27,5 +27,13 @@ namespace CRUDE_műveletek.Controllers
             if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
             return new JsonResult(kérdés);
         }
+
+        [HttpGet]
+        [Route("questions/count")]
+        public int NQuestions()
+        {
+            HajosContext context = new();
+            return context.Questions.Count();
+        }
     }
 }
