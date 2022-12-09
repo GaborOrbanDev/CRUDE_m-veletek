@@ -17,5 +17,15 @@ namespace CRUDE_műveletek.Controllers
             return Ok(kérdések);
             //return new JsonResult(kérdések);
         }
+
+        [HttpGet]
+        [Route("questions/{sorszam}")]
+        public IActionResult GetAction(int sorszam)
+        {
+            HajosContext context = new HajosContext();
+            var kérdés = context.Questions.Where(q=>q.QuestionId==sorszam).Select(x => x).FirstOrDefault();
+            if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
+            return new JsonResult(kérdés);
+        }
     }
 }
